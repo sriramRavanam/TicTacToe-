@@ -18,7 +18,7 @@ class board{
         board(){
             for(int i=0;i<3;i++)
                 for(int j=0;j<3;j++){
-                    array[i][j] = 'E';
+                    array[i][j] = ' ';
                     array_flag[i][j]=0;
                 }
         }
@@ -56,18 +56,22 @@ void TTT::board_display(){
     cout << endl;
     cout << "___________________" << endl;
     cout << "|  1  |  2  |  3  |" << endl;
-    cout << "*______*______*____*" << endl;
+    cout << "______*______*____*" << endl;
     cout << "|  4  |  5  |  6  |" << endl;
-    cout << "*______*______*____*" << endl;
+    cout << "______*______*____*" << endl;
     cout << "|  7  |  8  |  9  |" << endl;
     cout << "___________________" << endl;
 
 }
 
 void TTT::display(){
-    cout<<array[0][0]<<"    "<<array[0][1]<<"   "<<array[0][2]<<endl;
-    cout<<array[1][0]<<"    "<<array[1][1]<<"   "<<array[1][2]<<endl;
-    cout<<array[2][0]<<"    "<<array[2][1]<<"   "<<array[2][2]<<endl;
+    cout <<"___________________" << endl;
+    cout <<"|  "<<array[0][0]<<"  |  "<<array[0][1]<<"  |  "<<array[0][2]<<"  |\n";
+    cout <<"______*_____*_____*" << endl;
+    cout <<"|  "<<array[1][0]<<"  |  "<<array[1][1]<<"  |  "<<array[1][2]<<"  |"<<endl;
+    cout <<"______*_____*_____*" << endl;
+    cout <<"|  "<<array[2][0]<<"  |  "<<array[2][1]<<"  |  "<<array[2][2]<<"  |"<<endl;
+    cout <<"___________________" << endl;
 
 }
 void TTT::assign(){
