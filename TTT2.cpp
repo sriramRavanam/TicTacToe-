@@ -79,17 +79,8 @@ void TTT::assign(){
     p1win = false;
     p2win = false;
     while(p1win!=true && p2win!=true){
-        //check for draw
-         c=0;
-        for(i=0;i<3;i++)
-            for(int j=0;j<3;j++){
-                if(array_flag[i][j]==1)
-                    c++;
-            
-        if(c==9){
-            cout<<"its a DRAW !!!!";
-            exit(1);
-        }}
+       
+         
         
         bool element_insert = false;
         while(element_insert!=true){
@@ -145,17 +136,7 @@ void TTT::assign(){
         }
         display();
 
-        //check for draw
-         c=0;
-        for(i=0;i<3;i++)
-            for(int j=0;j<3;j++){
-                if(array_flag[i][j]==1)
-                    c++;
-            
-        if(c==9){
-            cout<<"its a DRAW !!!!";
-            exit(1);
-        }}
+       
 
             if ((array[0][0] == choice1) && (array[0][1] == choice1) && (array[0][2] == choice1))
             {
@@ -219,6 +200,19 @@ void TTT::assign(){
         {
             cout << endl;
         }
+        
+         //check for draw
+         c=0;
+        for(i=0;i<3;i++)
+            for(int j=0;j<3;j++){
+                if(array_flag[i][j]==1)
+                    c++;
+            
+        if(c==9){
+            cout<<"its a DRAW !!!!";
+            exit(1);
+        }}
+        
         /*
                         For Player 2
         */
@@ -342,17 +336,7 @@ void TTT::assign(){
             cout << endl;
         }
         
-        //check for draw
-        c=0;
-        for(i=0;i<3;i++)
-            for(int j=0;j<3;j++){
-                if(array_flag[i][j]==1)
-                    c++;
-            
-        if(c==9){
-            cout<<"its a DRAW !!!!";
-            exit(1);
-        }}
+        
     }
 }
 
