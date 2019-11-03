@@ -54,29 +54,30 @@ bool TTT::set_values(char *player1,char *player2,char ch1,char ch2){
 void TTT::board_display(){
     cout << "Make yourself familiar with the structure of the board" << endl;
     cout << endl;
-    cout << "___________________" << endl;
+    //cout << "___________________" << endl;
     cout << "|  1  |  2  |  3  |" << endl;
     cout << "______*______*____*" << endl;
-    cout << "|  4  |  5  |  6  |" << endl;
+    cout << "|  4  |  5  |  6  |" << endl;git 
     cout << "______*______*____*" << endl;
     cout << "|  7  |  8  |  9  |" << endl;
-    cout << "___________________" << endl;
+    //cout << "___________________" << endl;
 
 }
 
 void TTT::display(){
-    cout <<"___________________" << endl;
+    //cout <<"___________________" << endl;
     cout <<"|  "<<array[0][0]<<"  |  "<<array[0][1]<<"  |  "<<array[0][2]<<"  |\n";
     cout <<"______*_____*_____*" << endl;
     cout <<"|  "<<array[1][0]<<"  |  "<<array[1][1]<<"  |  "<<array[1][2]<<"  |"<<endl;
     cout <<"______*_____*_____*" << endl;
     cout <<"|  "<<array[2][0]<<"  |  "<<array[2][1]<<"  |  "<<array[2][2]<<"  |"<<endl;
-    cout <<"___________________" << endl;
+    //cout <<"___________________" << endl;
 
 }
 void TTT::assign(){
     int i=0,c;
-    p1win=false,p2win=false;
+    p1win = false;
+    p2win = false;
     while(p1win!=true && p2win!=true){
         //check for draw
          c=0;
