@@ -27,7 +27,7 @@ class board{
 
 class TTT:protected player,public board{
     public:
-        bool p1win=false,p2win=false;
+        bool p1win,p2win;
         bool set_values(char *,char *,char ,char );
         void board_display();
         void display();
@@ -76,6 +76,7 @@ void TTT::display(){
 }
 void TTT::assign(){
     int i=0,c;
+    p1win=false,p2win=false;
     while(p1win!=true && p2win!=true){
         //check for draw
          c=0;
@@ -162,7 +163,7 @@ void TTT::assign(){
                 p1win = true;
                 exit(1);  
             }
-            else if ((array[1][0] == choice1) && (array[1][1] == choice1) && (array[1][0] == choice1))
+            else if ((array[1][0] == choice1) && (array[1][1] == choice1) && (array[1][2] == choice1))
             {
             	cout<<endl;
                  cout <<name1<< " is the Winner";
